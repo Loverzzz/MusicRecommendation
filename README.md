@@ -66,6 +66,7 @@ Model yang digunakan untuk sistem rekomendasi ini adalah Content-Based Filtering
 # Evaluasi 
 untuk sistem rekomendasi berbasis konten ini, kita dapat mengukur Cosine Similarity sebagai metrik utama untuk melihat seberapa relevan rekomendasi yang diberikan:
 ![image](https://github.com/user-attachments/assets/3d363a69-7e64-4094-af88-b04c48e43792)
+
 Setelah menggunakan metode Cosine Similarity, rekomendasi yang diberikan memiliki skor kesamaan yang cukup tinggi antara lagu yang dimasukkan dan lagu-lagu yang direkomendasikan.
 
 ---Ini adalah bagian akhir laporan---
