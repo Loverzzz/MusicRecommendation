@@ -128,7 +128,7 @@ Parameter:
  4. top_n: Jumlah rekomendasi teratas yang ingin dievaluasi (default 10).
  5. threshold: Batasan nilai similarity minimum agar suatu rekomendasi dianggap relevan (default 0.8).
 
-2. Model 2:
+2. Model 2 :
 
 ![image](https://github.com/user-attachments/assets/a8b6c05d-e2c7-4782-81d6-77fdc5183f50)
 
