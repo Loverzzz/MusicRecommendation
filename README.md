@@ -115,7 +115,8 @@ SVD digunakan untuk melakukan dimensionality reduction pada User-Item Interactio
 Skor kesamaan antar lagu dihitung berdasarkan matriks yang telah direduksi dimensinya. Hasil rekomendasi SVD memberikan lagu-lagu yang memiliki kesamaan terbesar dengan lagu yang dicari oleh pengguna.
 
 # Evaluasi 
-1. Model 1 : 
+1. Model 1 :
+   
 ![image](https://github.com/user-attachments/assets/8aa58dd0-cff1-4b5c-b8ae-7736064ae91f)
 
 Tujuan: Fungsi ini digunakan untuk menghitung precision berdasarkan rekomendasi lagu yang diberikan oleh model, yang dihitung menggunakan cosine similarity.
@@ -129,7 +130,9 @@ Parameter:
 
 3. Singular Value Decomposition (SVD)
 
-![image](https://github.com/user-attachments/assets/b5a8979d-ff1f-4053-8739-e49710238d1d)
+![image](https://github.com/user-attachments/assets/a8b6c05d-e2c7-4782-81d6-77fdc5183f50)
+
+![image](https://github.com/user-attachments/assets/1e8bdca8-011f-42ce-8f50-67a3acb5266d)
 
 - MAE mengukur kesalahan rata-rata tanpa mempertimbangkan apakah kesalahan tersebut besar atau kecil.
 - RMSE memberikan lebih banyak bobot pada kesalahan besar dan lebih sensitif terhadap nilai-nilai ekstrem, jadi jika model membuat kesalahan besar dalam beberapa prediksi, RMSE akan lebih tinggi daripada MAE.
