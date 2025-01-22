@@ -115,7 +115,7 @@ SVD digunakan untuk melakukan dimensionality reduction pada User-Item Interactio
 Skor kesamaan antar lagu dihitung berdasarkan matriks yang telah direduksi dimensinya. Hasil rekomendasi SVD memberikan lagu-lagu yang memiliki kesamaan terbesar dengan lagu yang dicari oleh pengguna.
 
 # Evaluasi 
-1. Model 1 :
+**Model 1 :**
    
 ![image](https://github.com/user-attachments/assets/8aa58dd0-cff1-4b5c-b8ae-7736064ae91f)
 
@@ -128,7 +128,7 @@ Parameter:
  4. top_n: Jumlah rekomendasi teratas yang ingin dievaluasi (default 10).
  5. threshold: Batasan nilai similarity minimum agar suatu rekomendasi dianggap relevan (default 0.8).
 
-2. Model 2 :
+**Model 2 :**
 
 ![image](https://github.com/user-attachments/assets/a8b6c05d-e2c7-4782-81d6-77fdc5183f50)
 
