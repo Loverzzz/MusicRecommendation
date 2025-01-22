@@ -100,16 +100,16 @@ Hasil dari perhitungan cosine similarity digunakan untuk memberikan rekomendasi 
 
 Hasil Top-N Rekomendasi Model 2 :
 Rekomendasi Lagu berdasarkan SVD untuk 'Bad Liar':
-1. 10,000 DOLLARS (similarity: 0.9757)
-2. 10,000 Hours (similarity: 0.9378)
-3. 10 Year Bender (similarity: 0.8895)
-4. 10 Variations in G, K.455 on "Unser dummer Pöbel meint" by C.W. Gluck: 3. Variation II (similarity: 0.5663)
-5. 1, 2, 3 (feat. Jason Derulo & De La Ghetto) (similarity: 0.5335)
-6. 1-2 Buckle Your Shoe (similarity: 0.2556)
-7. (Sittin' On) the Dock of the Bay (similarity: 0.2416)
-8. 10 Over 10 (feat. Rotimi) (similarity: 0.2256)
-9. 1/1 - Remastered 2004 (similarity: 0.1743)
-10. 1 Law (similarity: 0.0881)
+ 1. Affi Smart (similarity: 0.7259)
+ 2. Aerials (similarity: 0.2309)
+ 3. After Midnight (similarity: 0.1938)
+ 4. 6 Variations in F, K.54: 7. Variation VI (similarity: 0.1876)
+ 5. Afterglow (similarity: 0.1389)
+ 6. Affection (similarity: 0.1174)
+ 7. 24 Preludes, Op. 34: No. 14 in E-Flat Minor (Arr. L. Stokowski for Orchestra) [Live] (similarity: 0.1041)
+ 8. Afterlife (similarity: 0.1002)
+ 9. 10 Variations in G, K.455 on "Unser dummer Pöbel meint" by C.W. Gluck: 3. Variation II (similarity: 0.0584)
+ 10. Adiós Batata - Cerrero Dub Mix (similarity: 0.0417)
 
 SVD digunakan untuk melakukan dimensionality reduction pada User-Item Interaction Matrix, dan menghasilkan rekomendasi lagu berdasarkan kesamaan antar lagu-lagu yang telah direduksi dimensinya.
 Skor kesamaan antar lagu dihitung berdasarkan matriks yang telah direduksi dimensinya. Hasil rekomendasi SVD memberikan lagu-lagu yang memiliki kesamaan terbesar dengan lagu yang dicari oleh pengguna.
