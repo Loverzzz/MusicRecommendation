@@ -5,8 +5,6 @@ Rekomendasi musik adalah salah satu tantangan besar dalam bidang teknologi infor
 
 Pentingnya sistem rekomendasi musik adalah untuk meningkatkan pengalaman pengguna di platform streaming musik dengan memberikan lagu yang relevan dengan preferensi mereka. Sistem yang baik akan meningkatkan interaksi dan retensi pengguna pada platform, yang berdampak pada pendapatan dan pengembangan platform tersebut.
 
-Referensi data : https://www.kaggle.com/datasets/maharshipandya/-spotify-tracks-dataset/data
-
 # Business Understanding
 **Problem Statement**
 - Bagaimana cara mengatasi masalah keberagaman genre dan preferensi musik pengguna yang beragam?
@@ -30,6 +28,7 @@ Referensi data : https://www.kaggle.com/datasets/maharshipandya/-spotify-tracks-
   ini berfungsi untuk memberikan insight lagu baru dengan kemiripan terkait popularitas dari lagu mereka.
   
 # Data Understanding
+Referensi data : https://www.kaggle.com/datasets/maharshipandya/-spotify-tracks-dataset/data
 Jumlah data awal : 114000 rows and 21 Coloumn
 Jumlah data subset yang digunakan : 23999 and 21 Coloumn
 Kondisi :
@@ -62,10 +61,10 @@ Jumlah data yang digunakan adalah sekitar 20.000 baris untuk menjaga performa da
 Pada tahap ini, data yang diproses meliputi penghapusan nilai yang hilang, penghapusan data duplikat, dan normalisasi fitur numerik agar semua fitur memiliki rentang yang seragam.
 
 **Langkah-langkah Data Preparation:**
- - Menghapus Nilai Hilang: Data yang memiliki nilai kosong (missing values) akan dihapus agar tidak mempengaruhi analisis dan model.
  - Menghapus Duplikat: Data yang duplikat akan dihapus untuk menghindari redundansi dalam dataset.
- - Normalisasi Data: Menggunakan StandardScaler untuk menstandarkan data numerik (seperti danceability, energy, loudness) sehingga memiliki distribusi yang seragam dan mempercepat konvergensi model.
+ - Menghapus Nilai Hilang: Data yang memiliki nilai kosong (missing values) akan dihapus agar tidak mempengaruhi analisis dan model.
  - Subset Data: Hanya 23.999 baris pertama yang digunakan untuk mempercepat proses pelatihan dan evaluasi model.
+ - Normalisasi Data: Menggunakan StandardScaler untuk menstandarkan data numerik (seperti danceability, energy, loudness) sehingga memiliki distribusi yang seragam dan mempercepat konvergensi model.
 
 # Modelling and Result
 Model yang digunakan untuk sistem rekomendasi ini adalah Content-Based Filtering dengan menggunakan Cosine Similarity.
@@ -127,6 +126,9 @@ Parameter:
  3. cosine_sim: Matriks cosine similarity yang dihitung sebelumnya antara lagu-lagu dalam dataset.
  4. top_n: Jumlah rekomendasi teratas yang ingin dievaluasi (default 10).
  5. threshold: Batasan nilai similarity minimum agar suatu rekomendasi dianggap relevan (default 0.8).
+Interpretasi Hasil :
+- Precision = 1.0000 berarti semua rekomendasi yang diberikan untuk lagu tersebut adalah relevan (nilai similarity antara lagu yang direkomendasikan dan lagu yang dimaksud sangat tinggi, melebihi nilai threshold yang telah ditentukan).
+- Hasil ini menunjukkan bahwa model sangat baik dalam memberikan rekomendasi yang sesuai dan relevan untuk setiap lagu yang diuji. Dalam konteks ini, jika Anda melihat hasil evaluasi dengan nilai Precision 1.0000 untuk lagu-lagu yang disebutkan (seperti 'Bad Liar', 'ugly', 'Shallow', dll.), itu berarti bahwa model memberikan rekomendasi yang tepat dan sesuai dengan harapan, dan tidak ada rekomendasi yang gagal memenuhi kriteria relevansi (threshold similarity >= 0.8).
 
 **Model 2 :**
 
